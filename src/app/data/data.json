@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "CARIAGGI",
+    "number": "01",
+    "name": "CARIAGGI",
+    "image": "/ME.jpg",
+    "description": "Cariaggi is an Italian excellence in the production of high-quality yarns for knitting and weaving. Founded with a passion for traditional craftsmanship and a dedication to uncompromising quality, Cariaggi is globally recognized for its luxurious yarns. I collaborated with the design team to ensure consistency and cohesion in design and user experience across all platforms. Throughout my experience at Cariaggi , I have developed in-depth skills in using front-end technologies, including HTML, CSS, and JavaScript, to implement responsive and aesthetically pleasing user interfaces. I have worked with the Webflow platform and implemented specific sections with custom code.",
+    "mobileImage": "/ME.jpg",
+    "tabletImage": "/ME.jpg",
+    "pcImage": "/ME.jpg"
+  },
+  {
+    "slug": "PIETRO DUCCI",
+    "number": "02",
+    "name": "PIETRO DUCCI",
+    "image": "/ME.jpg",
+    "description": "The website of Eng. Pietro Ducci is a professional showcase presenting the services offered by Studio Tecnico Ducci in the field of engineering. The portal provides a comprehensive overview of the studio's competencies and activities.The site was built using Next.js. This technological choice ensures fast loading times and a smooth user experience. For styling, Tailwind CSS was employed, allowing for the creation of a responsive and customized design with clean and efficient code. Tailwind facilitated the creation of a modern and professional interface, perfectly aligned with the image of Studio Tecnico Ducci.The entire project was developed using TypeScript, which added a layer of robustness and maintainability to the code. This allowed for the detection and prevention of common errors during the development phase, resulting in a more reliable and easily maintainable application.The site's architecture was designed to be modular and scalable, with reusable React components that facilitate future expansions and updates. Particular attention was paid to search engine optimization (SEO) and accessibility, ensuring that the site is easily discoverable online and usable by a wide range of users.",
+    "tabletImage": "/ME.jpg",
+    "pcImage": "/ME.jpg"
+  },
+
+  {
+    "slug": "DOG MY DOG",
+    "number": "03",
+    "name": "DOG MY DOG",
+    "image": "/ME.jpg",
+    "description": "DogMyDog.it is a website dedicated to the world of dogs, providing a wide range of resources, tips, and products for taking care of your four-legged friends. As a front-end developer for DogMyDog.it, I had the opportunity to use Webflow to implement the creative ideas of the design team. Additionally, I actively collaborated with the design team to efficiently manage the project and ensure that the objectives were achieved on time and with the highest quality.",
+    "mobileImage": "/ME.jpg",
+    "tabletImage": "/ME.jpg",
+    "pcImage": "/ME.jpg"
+  }
+]

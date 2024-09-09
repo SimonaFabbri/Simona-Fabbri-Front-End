@@ -1,10 +1,10 @@
 import "./globals.css";
-import { Inter, League_Gothic } from "next/font/google";
+import { Montserrat, League_Gothic } from "next/font/google";
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-montserrat",
 });
 
 const league_Gothic = League_Gothic({
@@ -20,7 +20,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.variable + " " + league_Gothic.variable}>
+    <html
+      lang="en"
+      className={montserrat.variable + " " + league_Gothic.variable}
+    >
       <body
         className={
           "bg-[#171717]  flex flex-col items-center overflow-x-hidden "

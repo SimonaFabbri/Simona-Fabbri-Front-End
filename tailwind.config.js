@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       plugins: [],
       fontFamily: {
-        sans: ["var(--font-inter)"],
+        sans: ["var(--font-montserrat)"],
         mono: ["var(--font-league_Gothic)"],
       },
     },

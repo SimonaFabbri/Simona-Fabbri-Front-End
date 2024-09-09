@@ -26,9 +26,15 @@ const SelectWork = () => {
                   {obj.number}
                 </div>
                 <motion.div className="relative " whileHover="hover">
-                  <div className="text-[#DE2A4A] text-[180px] tracking-[-0.035em] leading-none font-mono   z-10 hover:opacity-[0.6]">
-                    <Link href={`/ Works/${obj.slug}`}>{obj.name}</Link>
-                  </div>
+                  <Link
+                    href={`/Works/${obj.slug
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}`}
+                  >
+                    <div className="text-[#DE2A4A] text-[180px] tracking-[-0.035em] leading-none font-mono z-10 hover:opacity-[0.6] cursor-pointer">
+                      {obj.name}
+                    </div>
+                  </Link>
                   <div className="w-[400px] h-[400px] absolute left-[340px] pointer-events-none bottom-[-250px]  ">
                     <motion.div
                       initial={{ opacity: 0, rotate: -10, translateY: 50 }}
@@ -37,7 +43,6 @@ const SelectWork = () => {
                         damping: 25,
                         stiffness: 500,
                       }}
-                      // animate={hoverControl}
                       className="z-20 "
                       variants={variants}
                       style={{ position: "absolute", height: 400, width: 400 }}
@@ -46,7 +51,7 @@ const SelectWork = () => {
                         id={Math.random()}
                         src={obj.image}
                         fill={true}
-                        alt="Picture of the author"
+                        alt="Picture of the work"
                         priority
                         className="rounded-[20px] "
                       />

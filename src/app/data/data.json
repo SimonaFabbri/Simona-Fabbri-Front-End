@@ -19,11 +19,31 @@
     "tabletImage": "/ME.jpg",
     "pcImage": "/ME.jpg",
     "url": "https://www.studioducci.it/",
-    "imagePresentazione": [
-      "/DucciFoto/presentazione.png",
-      "/DucciFoto/presentazioneCellulare.png",
-      "/DucciFoto/presentazioneTablet.png",
-      "/DucciFoto/presentazionePc.png"
-    ]
+    "Intro": {
+      "src": "/DucciFoto/presentazionePc.png",
+      "alt": "Presentation image for Pietro Ducci",
+      "client": "Ing. Pietro Ducci",
+      "role": "Front end developer",
+      "type": "Personal web site"
+    },
+    "Skill": {
+      "src": "/DucciFoto/presentazioneTablet.png",
+      "alt": "Presentation image for Pietro Ducci",
+      "description": "The site was built using Next.js.\nThis technological choice ensures fast loading times and a smooth user experience.\nFor styling, Tailwind CSS was employed, allowing for the creation of a responsive and customized design with clean and efficient code.\nTailwind facilitated the creation of a modern and professional interface, perfectly aligned with the image of Studio Tecnico Ducci.\nThe entire project was developed using TypeScript, which added a layer of robustness and maintainability to the code.\nThis allowed for the detection and prevention of common errors during the development phase, resulting in a more reliable and easily maintainable application.\nThe site's architecture was designed to be modular and scalable, with reusable React components that facilitate future expansions and updates.\nParticular attention was paid to search engine optimization (SEO) and accessibility, ensuring that the site is easily discoverable online and usable by a wide range of users.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "NEXT.JS",
+        "REACT",
+        "JavaScript",
+        "TypeScript",
+        "Tailwind"
+      ]
+    },
+    "Result": {
+      "src": "/DucciFoto/presentazioneCellulare.jpg",
+      "alt": "Presentation image for Pietro Ducci",
+      "description": "The site was built using Next.js.\nThis technological choice ensures fast loading times and a smooth user experience.\nFor styling, Tailwind CSS was employed, allowing for the creation of a responsive and customized design with clean and efficient code.\nTailwind facilitated the creation of a modern and professional interface, perfectly aligned with the image of Studio Tecnico Ducci.\nThe entire project was developed using TypeScript, which added a layer of robustness and maintainability to the code.\nThis allowed for the detection and prevention of common errors during the development phase, resulting in a more reliable and easily maintainable application.\nThe site's architecture was designed to be modular and scalable, with reusable React components that facilitate future expansions and updates.\nParticular attention was paid to search engine optimization (SEO) and accessibility, ensuring that the site is easily discoverable online and usable by a wide range of users."
+    }
   }
 ]

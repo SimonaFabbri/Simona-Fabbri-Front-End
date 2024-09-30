@@ -29,7 +29,7 @@ const Work = () => {
           </Link>
         </div>
         <div className="flex flex-col">
-          <h1 className="text-white text-[180px] pb-[40px] leading-none font-mono text-start">
+          <h1 className="text-white lg:text-[220px] md:text-[150px] text-[90px] pb-[40px] leading-none font-mono text-start">
             <Link
               href={workData.url}
               className="hover:text-[#DE2A4A] hover:underline hover:decoration-2 hover:underline-offset-8 transition-opacity duration-300"
@@ -38,28 +38,105 @@ const Work = () => {
               {workData.name}
             </Link>
           </h1>
-          <p className="text-[#AAAAAA] max-w-[800px] pb-[90px] font-sans text-[16px] whitespace-pre-wrap">
+          <p className="text-[#AAAAAA]  lg:pb-[120px] md:pb-[90px] pb-[60px] font-sans lg:text-[16px] md:text-[14px] text-[11px] whitespace-pre-wrap">
             {workData.description}
           </p>
-          <div className="w-full">
-            {workData.imagePresentazione &&
-              workData.imagePresentazione.length > 0 && (
-                <div className="image-gallery">
-                  {workData.imagePresentazione.map((imagePath, index) => (
-                    <div key={index} className="pb-20">
-                      <Image
-                        src={imagePath}
-                        alt={`Image ${index + 1} of ${workData.name}`}
-                        width={960}
-                        height={540}
-                        layout="responsive"
-                        objectFit="cover"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
+          <div className="flex  w-full  lg:pb-[120px] md:pb-[90px] pb-[60px] ">
+            <div className="w-[50%]">
+              <Image
+                src={workData.Intro.src}
+                alt={workData.Intro.alt}
+                width={960}
+                height={540}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            <div className="flex justify-center items-center w-[50%] ">
+              <div className=" flex flex-col text-start ">
+                <h1 className="mb-4 text-[#DE2A4A] font-sans lg:text-[24px] md:text-[18px] text-[16px]">
+                  {workData.name}
+                </h1>
+                <h2 className="mb-2 text-[#AAAAAA] font-sans lg:text-[16px] md:text-[14px] text-[11px]  ">
+                  Client:&nbsp; <strong>{workData.Intro.client}</strong>
+                </h2>
+                <h2 className="mb-2 text-[#AAAAAA] font-sans lg:text-[16px] md:text-[14px] text-[11px] ">
+                  Role:&nbsp; <strong>{workData.Intro.role}</strong>
+                </h2>
+                <h2 className="text-[#AAAAAA] font-sans lg:text-[16px] md:text-[14px] text-[11px]">
+                  Type: &nbsp; <strong>{workData.Intro.type}</strong>
+                </h2>
+              </div>
+            </div>
           </div>
+          <div className="flex  w-full lg:pb-[120px] md:pb-[90px] pb-[60px] ">
+            <div className="w-[50%]">
+              <h1 className="mb-4 text-[#DE2A4A] font-sans lg:text-[24px] md:text-[18px] text-[16px]">
+                TECHNOLOGIES USED FOR WEB DEVELOPMENT
+              </h1>
+              <p className="text-[#AAAAAA] whitespace-pre-line  font-sans lg:text-[16px] md:text-[14px] text-[11px] pr-[20px]">
+                {workData.Skill.description}
+              </p>
+            </div>
+            <div className="w-[50%] flex flex-col justify-center items-center text-start  ">
+              <Image
+                src={workData.Skill.src}
+                alt={workData.Skill.alt}
+                width={960}
+                height={540}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+          <div className="flex  w-full  lg:pb-[120px] md:pb-[90px] pb-[60px] ">
+            <div className="w-[50%]">
+              <Image
+                src={workData.Intro.src}
+                alt={workData.Intro.alt}
+                width={960}
+                height={540}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="flex justify-center items-center w-[50%] ">
+              <div className=" flex flex-col text-start ">
+                <h1 className="mb-4 text-[#DE2A4A] font-sans lg:text-[24px] md:text-[18px] text-[16px]">
+                  SKILLS OVERVIEW
+                </h1>
+                <ul className="list-disc font-sans lg:text-[16px] md:text-[14px] text-[11px] text-[#AAAAAA] pl-5">
+                  {workData.Skill.skills.map((skill, index) => (
+                    <li key={index} className="text-left">
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center text-center">
+            <h1 className="mb-4 text-[#DE2A4A] font-sans lg:text-[24px] md:text-[18px] text-[16px]">
+              RESULT
+            </h1>
+            <p className="mb-4 text-[#AAAAAA] whitespace-pre-line  font-sans lg:text-[16px] md:text-[14px] text-[11px] ">
+              {workData.Result.description}
+            </p>
+
+            <Link
+              href={workData.url}
+              className="mb-[80px] text-[#AAAAAA] hover:text-[#DE2A4A] underline decoration-2 underline-offset-8 transition-opacity duration-300  font-sans lg:text-[16px] md:text-[14px] text-[11px] "
+              target="_blank"
+            >
+              Link to website:&nbsp; <strong>{workData.name}</strong>
+            </Link>
+            <Image
+              src={workData.Result.src}
+              alt={workData.Result.alt}
+              width={960}
+              height={540}
+              className="w-full h-auto object-cover"
+            />
+          </div>
+
           <div className="pb-40"></div>
           <WorkTogetherWork />
         </div>

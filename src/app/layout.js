@@ -24,13 +24,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={montserrat.variable + " " + league_Gothic.variable}
     >
-      <body
-        className={
-          "bg-[#171717]  flex flex-col items-center overflow-x-hidden "
-        }
-      >
-        {children}
-      </body>
+      <body className={"bg-[#171717] overflow-x-hidden "}>{children}</body>
     </html>
   );
 }

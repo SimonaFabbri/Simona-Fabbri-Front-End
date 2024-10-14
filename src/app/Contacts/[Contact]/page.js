@@ -88,32 +88,34 @@ export default function ContactPage({ params }) {
           CONTACT
         </h1>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={nameValue}
-              onChange={(e) => setNameValue(e.target.value)}
-              onFocus={handleNameFocus}
-              onBlur={handleNameBlur}
-              required
-              className="w-full px-3 py-2 border rounded-md"
-            />
-          </div>
-          <div>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={emailValue}
-              onChange={(e) => setEmailValue(e.target.value)}
-              onFocus={handleEmailFocus}
-              onBlur={handleEmailBlur}
-              required
-              className="w-full px-3 py-2 border rounded-md"
-            />
+        <form onSubmit={handleSubmit} className="md:space-y-4 space-y-2">
+          <div className="md:flex w-full md:space-x-4 md:space-y-0 space-y-2">
+            <div className="md:w-[50%]">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={nameValue}
+                onChange={(e) => setNameValue(e.target.value)}
+                onFocus={handleNameFocus}
+                onBlur={handleNameBlur}
+                required
+                className="w-full px-3 py-2 border rounded-md text-[#808080] text-[16px]"
+              />
+            </div>
+            <div className="md:w-[50%]">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={emailValue}
+                onChange={(e) => setEmailValue(e.target.value)}
+                onFocus={handleEmailFocus}
+                onBlur={handleEmailBlur}
+                required
+                className="w-full px-3 py-2 border rounded-md text-[#808080] text-[16px]"
+              />
+            </div>
           </div>
           <div>
             <textarea
@@ -124,19 +126,19 @@ export default function ContactPage({ params }) {
               onFocus={handleMessageFocus}
               onBlur={handleMessageBlur}
               required
-              className="w-full px-3 py-2 border rounded-md"
+              className="w-full px-3 py-2 border rounded-md text-[#808080] text-[16px]"
               rows="4"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+            className="w-full text-[20px] bg-[#DE2A4A] text-black font-bold  py-4 px-4 rounded-md hover:bg-opacity-80 "
           >
-            Send Message
+            SEND
           </button>
         </form>
-        {status && <p className="mt-4 text-center">{status}</p>}
       </div>
+      {status && <p className="mt-4 text-center">{status}</p>}
     </div>
   );
 }

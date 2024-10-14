@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import SelectWork from "../components/SelectWork.js";
 import WorkTogether from "../components/WorkTogether.js";
+import Footer from "./Footer.js";
 
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -115,6 +116,7 @@ const Home = () => {
                   </div>
                 </div>
                 <SelectWork />
+                <div className="pb-[40px] md:pb-[90px] lg:pb-[140px]"></div>
                 <WorkTogether />
               </div>
             </div>
